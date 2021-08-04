@@ -25,9 +25,9 @@ Example of use
 
                 _dbConnection.executeStoreProcedure("spma_ProveedorPalabraClave_Actualizar", list);
             }
-            catch (Exception ex)
+            catch (DBConnectionException ex)
             {
-                throw new Exception(ex.Message);
+                throw new DBConnectionException(ex.Message);
             }
         }
 ```
